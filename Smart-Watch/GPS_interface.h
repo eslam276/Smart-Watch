@@ -1,5 +1,5 @@
-#ifndef HRS_INTERFACE_H
-#define HRS_INTERFACE_H
+#ifndef GPS_INTERFACE_H
+#define GPS_INTERFACE_H
 
 
 
