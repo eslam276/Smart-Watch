@@ -20,6 +20,10 @@ void setup()
 {
 
   GPS_Init();
+  HRS_Init();
+
+ 
+
   Serial.begin(9600);
 
 
@@ -41,12 +45,11 @@ void loop()
 
 
 
-    latitude = 31.042702446;
-    longtude = 31.358292069;
-    AvgBPS = 80;
+    latitude = GPS_Get_Latitude();
+    longtude = GPS_Get_Longitude(); 
+    AvgBPS = HRS_GetAvgBPM();
 
-  //  latitude = GPS_Get_Latitude();
-  //  longtude = GPS_Get_Longitude(); 
+  
 
    dtostrf(latitude, 2,6, latString); 
    dtostrf(longtude, 2,6, lonString); 
