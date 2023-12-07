@@ -20,7 +20,7 @@
 
 
 
-void HRS_Setup(void);
+void HRS_Init(void);
 
 int HRS_GetAvgBPM(void);
 
