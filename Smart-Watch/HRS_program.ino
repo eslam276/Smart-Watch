@@ -16,7 +16,7 @@ int beatAvg;
 
 
 
-void HRS_Setup(void)
+void HRS_Init(void)
 {
 
     Serial.begin(9600);
