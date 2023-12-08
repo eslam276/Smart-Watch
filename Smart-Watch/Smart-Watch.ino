@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 #include <SoftwareSerial.h>
 
 #include "HRS_interface.h"
@@ -91,10 +92,17 @@ void loop()
   //  dtostrf(longtude, 2,6, lonString); 
 
   
+    char latString[20];
+    char lonString[20];
 
-   strcat(arr,LAT);
+    strcpy(latString , LAT.c_str());
+    strcpy(lonString , LON.c_str());
+
+
+
+   strcat(arr,latString);
    strcat(arr," longtude = ");
-   strcat(arr,LON);
+   strcat(arr,lonString);
    strcat(arr,"  AVG BPS = ");
 
 
