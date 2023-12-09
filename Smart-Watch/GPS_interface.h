@@ -1,20 +1,9 @@
 #ifndef GPS_INTERFACE_H
 #define GPS_INTERFACE_H
 
-
-
-#include <SoftwareSerial.h>
-#include<TinyGPS.h>
-float lat, lon;
-
-
-#define rxPin 3
-#define txPin 2
-
-SoftwareSerial SerialGPS(rxPin,txPin); 
-TinyGPS GPS;
-
-
+// String inputString = ""; // a string to hold incoming data
+// boolean stringComplete = false; // whether the string is complete
+// String signal = "$GPGLL";
 
 
 
@@ -22,10 +11,10 @@ TinyGPS GPS;
 void GPS_Init();
 
 
-float GPS_Get_Latitude();
+char* GPS_Get_Latitude();
 
 
-float GPS_Get_Longitude();
+char* GPS_Get_Longitude();
 
 
 
